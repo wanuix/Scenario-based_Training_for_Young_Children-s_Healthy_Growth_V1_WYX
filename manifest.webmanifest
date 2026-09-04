@@ -1,0 +1,15 @@
+{
+  "name": "家庭情景演练",
+  "short_name": "情景演练",
+  "description": "家庭情景演练速查手册：今天/本周演什么、剧本与角色、整体计划、对孩子的好处。纯静态只读，不采集任何数据。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FBF9F6",
+  "theme_color": "#2E9E8F",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "./assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

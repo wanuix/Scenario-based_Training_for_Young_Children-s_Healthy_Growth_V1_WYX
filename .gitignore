@@ -1,0 +1,7 @@
+# 开发/测试产物不入库
+node_modules/
+*.log
+shot-*.png
+dom-*.html
+.DS_Store
+Thumbs.db
