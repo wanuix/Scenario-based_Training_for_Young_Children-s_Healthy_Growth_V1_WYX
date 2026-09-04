@@ -1,0 +1,55 @@
+/* 家庭情景演练 · 设计令牌（来源：HTML应用_02_UI视觉设计系统.md 第二节） */
+:root{
+  /* 品牌色 */
+  --color-primary:#2E9E8F;
+  --color-primary-dark:#227A6E;
+  --color-primary-soft:#E4F4F1;
+  --color-accent:#FF9A6C;
+  --color-accent-soft:#FFF0E8;
+
+  /* 中性色 */
+  --bg:#FBF9F6;
+  --surface:#FFFFFF;
+  --text-1:#2B2B2B;
+  --text-2:#5F6B69;
+  --text-3:#93A09D;
+  --border:#ECE7E1;
+
+  /* 六层优先级色 */
+  --p0:#F2B705;   --p0-soft:#FDF6DD;
+  --p1:#E8735A;   --p1-soft:#FDEBE6;
+  --p2:#3E8FB0;   --p2-soft:#E3F0F6;
+  --p3:#EF9A3D;   --p3-soft:#FDF0E1;
+  --p4:#57A773;   --p4-soft:#E6F3EB;
+  --p5:#9B72CF;   --p5-soft:#F0E9F9;
+  --pl:#7C8B99;   --pl-soft:#E9EDF1;
+
+  /* 三档口诀语义色 */
+  --grade-red:#D9534F;   --grade-red-soft:#FBECEC;
+  --grade-yellow:#E8A33D;--grade-yellow-soft:#FCF3E4;
+  --grade-green:#57A773; --grade-green-soft:#E6F3EB;
+
+  /* 字号阶梯（适老化：正文≥17） */
+  --fs-large-card:30px;
+  --fs-large:24px;
+  --fs-h1:23px;
+  --fs-h2:19px;
+  --fs-body:17px;
+  --fs-aux:15px;
+  --fs-tag:13px;
+  --lh:1.7;
+
+  /* 间距（8pt 栅格） */
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px;
+  --sp-5:20px; --sp-6:24px; --sp-8:32px;
+
+  /* 圆角/阴影 */
+  --r-card:16px; --r-btn:12px; --r-chip:999px;
+  --shadow-card:0 2px 12px rgba(43,43,43,.06);
+  --shadow-float:0 4px 16px rgba(43,43,43,.12);
+
+  /* 安全区 */
+  --tabbar-h:56px; --appbar-h:52px;
+}
+/* 大字模式：html[data-large="on"] 整体放大 */
+html[data-large="on"]{ --fs-body:22px; --fs-h1:28px; --fs-h2:24px; --fs-aux:19px; --fs-tag:15px; }

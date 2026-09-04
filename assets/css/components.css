@@ -1,0 +1,178 @@
+/* 家庭情景演练 · 组件样式（来源：HTML应用_02 第三节 组件规范） */
+
+/* ---- SectionCard 内容卡 ---- */
+.section-card{
+  background:var(--surface);
+  border-radius:var(--r-card);
+  box-shadow:var(--shadow-card);
+  padding:var(--sp-4);
+  margin-bottom:var(--sp-4);
+}
+.section-card--accent{border-left:4px solid var(--color-accent);}
+.section-card--primary{border-left:4px solid var(--color-primary);}
+
+/* ---- ScriptCard 剧本卡 ---- */
+.script-card{
+  display:flex;align-items:center;gap:var(--sp-3);
+  background:var(--surface);
+  border-radius:var(--r-card);
+  box-shadow:var(--shadow-card);
+  padding:var(--sp-3) var(--sp-4);
+  margin-bottom:var(--sp-3);
+  border-left:4px solid var(--color-primary);
+  width:100%;text-align:left;cursor:pointer;border-top:none;border-right:none;border-bottom:none;
+  font-family:inherit;color:inherit;
+}
+.script-card:active{background:var(--color-primary-soft);}
+.script-card__badge{
+  flex-shrink:0;min-width:46px;text-align:center;
+  background:var(--color-primary-soft);color:var(--color-primary-dark);
+  font-size:var(--fs-tag);font-weight:700;border-radius:10px;padding:4px 6px;
+}
+.script-card__body{flex:1;min-width:0;}
+.script-card__title{font-size:var(--fs-h2);font-weight:600;line-height:1.4;}
+.script-card__tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;}
+.script-card__arrow{flex-shrink:0;color:var(--text-3);font-size:18px;}
+
+/* ---- Badge/Tag 标签 ---- */
+.tag{display:inline-block;font-size:var(--fs-tag);line-height:1;padding:5px 9px;border-radius:var(--r-chip);font-weight:600;}
+.tag--p0{background:var(--p0-soft);color:#9a7600;}
+.tag--p1{background:var(--p1-soft);color:#b4533d;}
+.tag--p2{background:var(--p2-soft);color:#276c8c;}
+.tag--p3{background:var(--p3-soft);color:#b06a1d;}
+.tag--p4{background:var(--p4-soft);color:#3c7d54;}
+.tag--p5{background:var(--p5-soft);color:#6f4ca6;}
+.tag--pl{background:var(--pl-soft);color:#55636f;}
+.tag--plain{background:var(--color-primary-soft);color:var(--color-primary-dark);}
+.tag--stage{background:#F1EFEA;color:#5F6B69;}
+.tag--mode{background:#EFEDF4;color:#6A5A8A;}
+.tag--grade-red{background:var(--grade-red-soft);color:var(--grade-red);}
+.tag--grade-yellow{background:var(--grade-yellow-soft);color:#a5731f;}
+.tag--grade-green{background:var(--grade-green-soft);color:var(--grade-green);}
+
+/* ---- AnchorChips 锚点胶囊 ---- */
+.anchor-chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px;margin-bottom:var(--sp-2);-webkit-overflow-scrolling:touch;}
+.chip{
+  flex-shrink:0;font-size:var(--fs-aux);color:var(--text-2);
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r-chip);
+  padding:7px 14px;cursor:pointer;text-decoration:none;
+}
+.chip.on,.chip:active{background:var(--color-primary);color:#fff;border-color:var(--color-primary);}
+
+/* ---- 按钮 ---- */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 18px;border-radius:var(--r-btn);font-size:var(--fs-body);font-weight:600;cursor:pointer;border:none;font-family:inherit;}
+.btn--primary{background:var(--color-primary);color:#fff;}
+.btn--primary:active{background:var(--color-primary-dark);}
+.btn--outline{background:var(--surface);color:var(--color-primary);border:1.5px solid var(--color-primary);}
+.btn--block{width:100%;}
+
+/* ---- 大字卡 LargeCard ---- */
+.large-card{
+  background:#fff;border-radius:var(--r-card);padding:var(--sp-6) var(--sp-5);
+  text-align:center;box-shadow:var(--shadow-card);margin-bottom:var(--sp-4);
+  min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:var(--sp-4);
+}
+.large-card__line{font-size:var(--fs-large-card);font-weight:700;line-height:1.4;color:var(--text-1);}
+.large-card__action{font-size:var(--fs-large);color:var(--color-primary-dark);}
+.large-card__meta{font-size:var(--fs-aux);color:var(--text-3);}
+
+/* ---- Timeline 时间轴 ---- */
+.timeline{display:flex;gap:8px;overflow-x:auto;padding:6px 2px 12px;-webkit-overflow-scrolling:touch;}
+.timeline__node{
+  flex-shrink:0;min-width:118px;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r-btn);padding:10px 12px;font-size:var(--fs-tag);color:var(--text-2);
+}
+.timeline__node .tl-date{font-weight:700;color:var(--text-1);display:block;margin-bottom:2px;}
+.timeline__node.now{border-color:var(--color-accent);background:var(--color-accent-soft);}
+.timeline__node.now .tl-date{color:#b4533d;}
+
+/* ---- DataTable 数据表 ---- */
+.data-table{width:100%;border-collapse:collapse;background:var(--surface);border-radius:var(--r-card);overflow:hidden;box-shadow:var(--shadow-card);font-size:var(--fs-aux);}
+.data-table th{background:var(--color-primary-soft);color:var(--color-primary-dark);text-align:left;padding:10px 12px;font-weight:600;position:sticky;top:0;}
+.data-table td{padding:10px 12px;border-top:1px solid var(--border);vertical-align:top;}
+.data-table tr:nth-child(even) td{background:#FAF8F4;}
+.data-table--scroll{overflow-x:auto;border-radius:var(--r-card);}
+
+/* ---- PhraseCard 话术卡 ---- */
+.phrase-card{background:var(--surface);border-left:4px solid var(--color-primary);border-radius:var(--r-btn);padding:var(--sp-4);margin-bottom:var(--sp-3);box-shadow:var(--shadow-card);}
+.phrase-card__name{font-weight:600;color:var(--color-primary-dark);margin-bottom:var(--sp-1);}
+.phrase-card__content{font-size:var(--fs-body);}
+
+/* ---- AlertCard 提示卡 ---- */
+.alert-card{border-radius:var(--r-btn);padding:var(--sp-4);margin-bottom:var(--sp-3);}
+.alert-card--warn{background:var(--color-accent-soft);border:1px solid #F6D8C8;}
+.alert-card--info{background:var(--color-primary-soft);border:1px solid #CBE4DF;}
+.alert-card--danger{background:var(--grade-red-soft);border:1px solid #F3CFCD;}
+.alert-card__title{font-weight:600;margin-bottom:6px;}
+
+/* ---- 分层色块 / 金字塔 ---- */
+.layer-block{border-radius:var(--r-card);padding:var(--sp-4);margin-bottom:var(--sp-3);background:var(--surface);border:1px solid var(--border);}
+.layer-block--total{background:var(--color-primary-soft);}
+.layer-block--main{background:#F0F6F5;}
+.layer-block--daily{background:#FAF8F4;}
+.layer-block--special{background:var(--color-accent-soft);}
+
+/* ---- 网格 ---- */
+.grid-2{display:flex;flex-wrap:wrap;gap:var(--sp-3);}
+.grid-2>*{flex:1 1 150px;min-width:0;}
+.grid-3{display:flex;flex-wrap:wrap;gap:var(--sp-3);}
+.grid-3>*{flex:1 1 96px;min-width:0;}
+
+/* ---- FAB/底部操作条 ---- */
+.fab-bar{position:fixed;bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom));left:0;right:0;display:flex;gap:10px;padding:10px var(--sp-4);background:linear-gradient(transparent,var(--bg) 30%);z-index:40;}
+.fab-bar .btn{flex:1;}
+
+/* ---- 步骤条 ---- */
+.step-list{counter-reset:step;}
+.step-item{display:flex;gap:12px;margin-bottom:var(--sp-3);}
+.step-item__no{
+  flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--color-primary);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:var(--fs-tag);font-weight:700;
+}
+.step-item__body{flex:1;}
+.step-item__title{font-weight:600;}
+
+/* ---- 对话气泡 ---- */
+.dialog{display:flex;flex-direction:column;gap:10px;margin:var(--sp-3) 0;}
+.dialog__row{display:flex;align-items:flex-start;gap:8px;}
+.dialog__who{flex-shrink:0;font-size:var(--fs-tag);color:var(--text-3);padding-top:6px;min-width:40px;}
+.dialog__bubble{flex:1;background:var(--color-primary-soft);border-radius:12px;padding:8px 12px;font-size:var(--fs-body);}
+.dialog__row--child .dialog__bubble{background:var(--color-accent-soft);}
+
+/* ---- 快捷入口卡 ---- */
+.quick-grid{display:flex;gap:10px;}
+.quick-grid .quick-card{flex:1;min-width:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-btn);padding:12px 10px;text-align:center;font-size:var(--fs-aux);color:var(--text-2);cursor:pointer;}
+.quick-grid .quick-card .q-icon{font-size:22px;display:block;margin-bottom:4px;}
+.quick-grid .quick-card:active{background:var(--color-primary-soft);}
+
+/* ---- 里程碑 / 双标尺 ---- */
+.ms-card{background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow-card);padding:var(--sp-4);margin-bottom:var(--sp-3);}
+.ms-card__head{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.ms-card__no{background:var(--color-primary);color:#fff;border-radius:var(--r-chip);font-size:var(--fs-tag);font-weight:700;padding:3px 10px;flex-shrink:0;}
+.ms-card__name{font-weight:600;font-size:var(--fs-h2);}
+.ms-dual{display:flex;flex-direction:column;gap:8px;}
+.ms-dual .drill,.ms-dual .real{display:flex;gap:8px;font-size:var(--fs-aux);}
+.ms-dual .drill b{color:var(--color-primary-dark);flex-shrink:0;}
+.ms-dual .real b{color:var(--color-accent);flex-shrink:0;}
+
+/* ---- 收益公式可视化 ---- */
+.formula{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;padding:var(--sp-4) 0;font-size:var(--fs-h2);font-weight:600;text-align:center;}
+.formula .f-item{background:var(--color-primary-soft);border-radius:var(--r-btn);padding:10px 14px;color:var(--color-primary-dark);}
+.formula .f-op{color:var(--text-2);font-weight:400;}
+.neural-path{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;padding:var(--sp-3) 0;}
+.neural-path .np-node{background:var(--color-accent-soft);border-radius:var(--r-chip);padding:8px 14px;font-weight:600;color:#b4533d;}
+.neural-path .np-arrow{color:var(--text-3);display:flex;align-items:center;}
+
+/* ---- 筛选条 ---- */
+.filter-bar{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px;-webkit-overflow-scrolling:touch;}
+.filter-bar .chip{flex-shrink:0;}
+
+/* ---- 打印样式 ---- */
+@media print{
+  .appbar,.tabbar,.fab-bar,.anchor-chips,.filter-bar,.no-print{display:none!important;}
+  body{background:#fff;color:#000;padding:0;}
+  .view{padding:0;max-width:none;}
+  .large-card{box-shadow:none;min-height:0;page-break-inside:avoid;}
+  .print-only{display:block;}
+}
+.print-only{display:none;font-size:var(--fs-tag);color:var(--text-3);text-align:center;margin-top:var(--sp-4);}

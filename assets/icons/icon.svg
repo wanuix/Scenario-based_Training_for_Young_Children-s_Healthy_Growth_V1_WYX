@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#2E9E8F"/>
+  <!-- 两个角色（大人与孩子）的对话气泡 -->
+  <path d="M150 150 h130 a22 22 0 0 1 22 22 v72 a22 22 0 0 1 -22 22 h-78 l-34 26 v-26 h-18 a22 22 0 0 1 -22 -22 v-72 a22 22 0 0 1 22 -22 z" fill="#ffffff"/>
+  <path d="M234 230 h128 a22 22 0 0 1 22 22 v72 a22 22 0 0 1 -22 22 h-76 l-34 26 v-26 h-18 a22 22 0 0 1 -22 -22 v-72 a22 22 0 0 1 22 -22 z" fill="#FF9A6C"/>
+  <!-- 三个小圆点：表达"说→听→走" -->
+  <circle cx="180" cy="186" r="13" fill="#2E9E8F"/>
+  <circle cx="222" cy="186" r="13" fill="#2E9E8F"/>
+  <circle cx="264" cy="186" r="13" fill="#2E9E8F"/>
+  <path d="M326 272 l30 24 -30 24 z" fill="#ffffff"/>
+</svg>

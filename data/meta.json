@@ -1,0 +1,40 @@
+{
+  "child": {
+    "name": "宝宝",
+    "birth": "",
+    "gender": "女",
+    "entryAge": "3岁9个月（2026年9月入园）"
+  },
+  "kindergarten": {
+    "name": "XX幼儿园",
+    "class": "小班"
+  },
+  "family": {
+    "permanent": [
+      "妈妈",
+      "爸爸",
+      "爷爷",
+      "奶奶"
+    ],
+    "temporary": {
+      "members": [
+        "姥姥",
+        "姥爷"
+      ],
+      "from": "2026-09-16",
+      "to": "2026-10-06",
+      "note": "21天密集资源窗口"
+    }
+  },
+  "version": {
+    "plan": "v3.2",
+    "app": "1.0.0",
+    "dataSource": "情景演练训练方案_v3.2修订版.md",
+    "updatedAt": "2026-09-04"
+  },
+  "today": {
+    "anchorDate": null,
+    "note": "默认使用设备本地日期；此字段仅供调试覆盖"
+  },
+  "positioning": "本应用=V3.2家庭速查手册：纯静态·只读·零后端·零维护·不采集任何数据。"
+}
